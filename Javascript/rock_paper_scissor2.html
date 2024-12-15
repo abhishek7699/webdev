@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+                text-align: center;
+            }
+            button{
+                padding: 20px ;
+                margin:20px;
+                size: 30px;
+
+                border:none;
+                border-radius: 20px;
+            }
+            #rock{
+                background-color:red;
+            }
+            #paper{
+                background-color:green;
+            }
+            #scissor{
+                background-color: blue;
+
+
+            }
+
+            .result1{
+
+                color: white;
+                font-weight: 600;
+                background-color: blueviolet;
+                border-width: 0cqmax;
+
+            }
+             
+    </style>
+</head>
+<body>
+
+    <h1>Play the game rock paper scissor</h1>
+<p>Rock Paper Scissor</p>
+<button id="rock"onclick="playGame('rock')">Rock</button>
+<button id="paper" onclick="playGame('paper')">Paper</button>
+<button id="scissor" onclick="playGame('scissor')">Scissor</button>
+
+<button onclick="playGame('reset')">Reset</button>
+<h2>Result</h2>
+<div class="result1"></div>
+<p id="moves"></p>
+
+    <p id="result"></p>
+
+</div>
+
+</body>
+
+<script>
+    const score={
+
+win: 0,
+lose: 0,
+tie: 0,
+
+}
+    function playGame(playerMove){
+
+       
+        
+
+        if (playerMove==="reset"){
+            score.win=0;
+            score.lose=0;
+            score.tie=0;
+
+        }
+
+
+        const randomNumber=Math.random()*10;
+        let computerMove
+
+        if(randomNumber>=0 && randomNumber<3){
+            computerMove='rock';
+        }
+        if(randomNumber>=3 && randomNumber<6){
+            computerMove='paper';
+        }
+        if(randomNumber>=6 && randomNumber<9){
+            computerMove='scissor';
+        }
+
+        let result
+
+        if(computerMove===playerMove){
+            result='it is a tie';
+            score.tie=score.tie+1;
+        }
+        else if ((playerMove==='rock' && computerMove==='paper') || (playerMove==="scissor" && computerMove==='rock') || (playerMove=== 'paper' && computerMove==='scissor')){
+            result=' you lose to the computer';
+            score.lose=score.lose+1;
+        }
+        else if ((playerMove==='paper' && computerMove==='rock') || (playerMove==="rock" && computerMove==='scissor') || (playerMove=== 'scissor' && computerMove==='paper')){
+            result=' you win to the computer'
+            score.win=score.win+1;
+        }
+
+        document.getElementById('moves').innerHTML=`computer move is ${computerMove} and player Move is ${playerMove}`;
+       
+        document.getElementById('result').innerHTML=result;
+
+
+
+        alert(`This is the score of the match:
+        Tie: ${score.tie}
+        Win: ${score.win}
+            Lose: ${score.lose}`);
+
+        
+    }
+
+    
+    </script>
+</html>

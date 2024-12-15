@@ -1,0 +1,57 @@
+.name{
+    color : rgba(59, 15, 220, 0.933);
+    font-size: xx-large;
+}
+#abhishek{
+    color : rgba(225, 9, 66, 0.992);
+    font-size: xx-large;
+}
+
+p{
+
+    color:chartreuse;
+    font-size: xx-large;
+    line-height: 4;
+    text-decoration: line-through;
+}
+
+.Abhishek{
+    color : rgba(225, 9, 66, 0.992);
+    font-size: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 0.5%;
+}
+
+#true{
+    background-image: url(image.jpeg);
+    height: 900px;
+    width: 900px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+
+
+
+}
+
+
+
+h2:hove{
+  
+    text-decoration: none;
+}
+
+section p{
+    font-family:cursive;
+    font-weight: 1000;
+}
+
+h3{
+    font-weight: 100;
+    font-size: xx-large;
+    text-align: right
+    text-transform: capitalize;
+
+}

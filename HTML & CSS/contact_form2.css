@@ -1,0 +1,77 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header Styling */
+.Header {
+    background-color: #b6d7a8;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.Header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.Header p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Body Styling */
+.Body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* Button Styling */
+button {
+    background-color: #b6d7a8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+}

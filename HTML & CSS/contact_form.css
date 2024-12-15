@@ -1,0 +1,63 @@
+.Header{
+
+    text-decoration-color: aliceblue;
+    background-color: #b6d7a8;;
+    
+    text-align: center;
+    color:white;
+    border-radius: 20px;
+    
+}
+h1{
+    text-align: center;
+    
+    
+}
+
+input[type="textarea"]{
+
+    height: 150px;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="textarea"]{
+    width:100%;
+}
+
+*{
+    padding: 10px 150px;
+    box-sizing: border-box;
+    
+
+
+    
+}
+
+body{
+    border-radius:5px;
+    background-color:rgb(234, 231, 231);
+
+}
+
+.Body{
+    background-color:rgb(244, 241, 241);
+    padding :5px 20px 15px;
+    border: 1px solid rgb(180, 178, 178);
+    border-radius:  20px;;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+input[type="submit"]{
+
+    background-color: #b6d7a8;;
+    border-radius: 6px;
+    border: none;
+}
+
+input[type="submit"]:hover{
+
+    background-color: green;
+    cursor: pointer;
+}
