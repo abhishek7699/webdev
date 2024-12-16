@@ -48,11 +48,29 @@ gap:1.5vmin;
     color:red;
     box-shadow: black;
     padding:20px;
+    font-size: large;
 
 
 }
 
 #reset{
+
+    gap:2;
     padding:20px;
     height:5px;
+}
+
+.msg-container{
+
+    height: 40vmin;
+
+}
+
+#msg{
+    color: white;
+    font-size: 8vmin;
+}
+
+.hide{
+    display:none
 }
