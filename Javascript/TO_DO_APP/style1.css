@@ -1,0 +1,26 @@
+*{
+    padding:10px;
+    margin:10px;
+}
+
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    
+}
+
+fieldset{
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 20px;
+    
+}
+
+button{
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(179, 176, 176);
+}
+
